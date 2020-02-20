@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: docker
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build Image
+          command: |
+            docker build -t eyenx/brig .
+      - run:
+          name: Test Image
+          command: |
+            docker run eyenx/brig --help
+      - run:
+          name: Push Image
+          command: |
+            echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin && docker tag eyenx/brig:latest eyenx/brig:$CIRCLE_SHA1 && docker push eyenx/brig:latest && docker push eyenx/brig:$CIRCLE_SHA1
+
