@@ -1,5 +1,6 @@
 # docker-brig
 
+[![](https://images.microbadger.com/badges/image/eyenx/brig.svg)](https://microbadger.com/images/eyenx/brig "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/eyenx/brig.svg)](https://microbadger.com/images/eyenx/brig "Get your own version badge on microbadger.com")
 [![Circle CI](https://circleci.com/gh/eyenx/docker-brig.svg?style=svg)](https://circleci.com/gh/eyenx/docker-brig)
 
 
