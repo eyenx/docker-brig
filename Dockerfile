@@ -3,7 +3,7 @@ FROM	golang
 LABEL   org.opencontainers.image.authors="Toni Tauro <eye@eyenx.ch>"
 ENV	BRIG_PATH	/app
 ENV	BRIG_USER	"null@null/null"
-ENV	IPFS_VERSION	v0.7.1
+ENV	IPFS_VERSION	v0.8.0
 ENV	BRIG_VERSION	v0.4.1
 RUN	curl https://dist.ipfs.io/go-ipfs/${IPFS_VERSION}/go-ipfs_${IPFS_VERSION}_linux-amd64.tar.gz | tar -xzC /tmp/ \
 	&& mv /tmp/go-ipfs/ipfs /usr/bin \
