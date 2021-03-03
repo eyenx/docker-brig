@@ -1,6 +1,6 @@
 	
 FROM	golang
-LABEL   org.opencontainers.image.source="Toni Tauro <eye@eyenx.ch>"
+LABEL   org.opencontainers.image.authors="Toni Tauro <eye@eyenx.ch>"
 ENV	BRIG_PATH	/app
 ENV	BRIG_USER	"null@null/null"
 ENV	IPFS_VERSION	v0.4.23
